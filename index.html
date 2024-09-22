@@ -4,11 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd131</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Page created by Icaro Angelo covering dynamic web design fundamentals, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Icaro Angelo">
+    <title>WDD 131 - Dynamic Web Fundamentals - Icaro Angelo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>wdd131 - icaro</h1>
+    <header>
+        WDD 131 - Dynamic Web Fundamentals - Icaro Angelo
+    </header>
+
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="https://www.linkedin.com/in/i-sgn" target="_blank">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/.">I-learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/19?lang=eng&id=p9#p9">Scripture</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <div>
+                    <p>My name is Icaro, and I was born in Brazil. I work remotely in customer service, which allows me to connect with people from different places. In my free time, I enjoy playing soccer and practicing Muay Thai, a martial art that has not only helped me stay healthy but has also taught me discipline and focus. I have been married for less than a year and I believe that love and companionship are essential to a happy life.</p>
+                </div>
+                <img src="images/profile2.jpg" alt="profile" width="150">
+            </div>
+            <h3>São Paulo, Brazil</h3>
+            <div class="brazil-info">
+                <img src="images/flag.webp" alt="flag" width="150">
+                <div>
+                    <p>Brazil is the fifth-largest country in the world, the seventh most populous and the most populous city is São Paulo. Brazil is known for its diverse culture and stunning landscapes. The Amazon Rainforest, home to countless species, covers a significant portion of the country. Brazil is also famous for its beautiful beaches, such as Copacabana and Ipanema. Portuguese is the official language, making Brazil the largest Portuguese-speaking nation. With its rich musical heritage, including genres like samba and bossa nova, Brazil is a unique and lively destination filled with warmth and energy.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/resources/dev-standards.html">Course Development Standards</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h1>&copy; <span id="current-year"></span> ⚽ Icaro San Angelo ⚽ Brazil</h1>
+        <p>Last modified on: <span id="last-modified-date"></span></p>
+    </footer>
 </body>
 
 </html>
