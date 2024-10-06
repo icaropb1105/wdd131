@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 .about-me p {
-    font-family: 'Playpen Sans', sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 17px;
     line-height: 1.5;
     margin-top: 20px;
@@ -74,7 +74,7 @@ nav a:hover {
 
 .brazil-info p {
     line-height: 1.5;
-    font-family: 'Playpen Sans', sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 17px;
 }
 
@@ -141,7 +141,7 @@ footer {
     background-color: hsl(199, 45%, 62%);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-family: 'Sofadi One', sans-serif;
     font-size: 20px;
 }
