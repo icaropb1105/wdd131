@@ -1,0 +1,232 @@
+@media (max-width: 739px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        margin: auto;
+        background-color: #033455;
+        display: grid;
+        grid-gap: 1rem;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 30px #333;
+    }
+
+    header h1 {
+        color: white;
+        margin-left: 25px;
+    }
+
+    .hamburger {
+        display: block; /* shows hamburguer in mobile */
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav {
+        background-color: #033455;
+        display: none; /* hidden by default*/
+        flex-direction: column;  
+    }
+
+    nav.active {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    nav a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        background-color: #eee;
+        color: #000;
+    }
+
+    .title1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .pictures img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 15px #333;
+    }
+
+    figcaption {
+        font-family: "Arial", serif;
+        font-size: 15px;
+        color: black; 
+        margin-top: 1px;
+        margin-bottom: 25px;
+    }
+
+    footer {
+        padding: 15px; 
+        background-color: #033455; 
+        color: #fff; 
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 30px #333;
+    }
+
+    footer h3 {
+        font-size: 15px;   
+    }
+
+    footer p {
+        font-size: 11px; 
+    }
+}
+
+
+/* Larger Views */
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #033455; 
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 30px #333;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        background-color: #cdcecf;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 250px;
+        margin: 20px;
+    }
+    
+    figure img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+    
+    figcaption {
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    figcaption h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: #020202;
+    }
+    
+    figcaption span {
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+        color: #333333;
+    }
+    
+    figcaption .location,
+    figcaption .dedicated,
+    figcaption .size {
+        font-weight: bold;
+    }
+    
+    .hamburger {
+        display: none; 
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+    header h1{
+        color: white;
+        margin-left: 25px;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    nav {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-end; 
+        background-color: #033455; 
+        font-size: 18px;
+    }
+
+    nav a {
+        flex: 1; 
+        padding: 1rem 2rem;  
+        color: #fff; 
+        text-align: center; 
+        text-decoration: none; 
+    }
+
+    nav a:hover {
+        text-decoration: underline; 
+        background-color: #eee; 
+        color: #000; 
+    }
+
+    main {
+        max-width: 1200px; 
+        margin: 20px auto; 
+    }
+
+    .title1{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .pictures {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .pictures img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px #333;
+    }
+    figure {
+        text-align: center; 
+    }
+    figcaption {
+        font-family: "Arial", serif;
+        font-size: 15px;
+        color: black; 
+        margin-top: 5px;
+    }
+    
+
+    footer {
+        padding: 10px;
+        background-color: #033455; 
+        color: #fff; 
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 30px #333;
+
+    }
+    footer p{
+        font-size: 15px;
+
+    }
+}
