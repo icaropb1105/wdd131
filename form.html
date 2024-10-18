@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Working with Forms. Page created by Icaro Angelo covering dynamic web design fundamentals, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Icaro Angelo">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html" id="reviewForm">
+        <div>
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Overall Rating</label>
+            <div>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">☆☆</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">☆☆☆</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">☆☆☆☆</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">☆☆☆☆☆</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+        </div>
+
+        <div>
+            <label>Which features did you find useful in the product? (Check all that apply)</label>
+            <div class="features-div">
+                <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" id="ease-of-use" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="writtenReview">Written Review (Optional)</label>
+            <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+        </div>
+
+        <div>
+            <label for="userName">Your Name (Optional)</label>
+            <input type="text" id="userName" name="userName">
+        </div>
+
+        <div>
+            <input type="submit" value="Post Review">
+        </div>
+    </form>
+
+    <footer>
+        <h3>&copy; <span id="current-year"></span> ⚽ Icaro San Angelo ⚽ Brazil</h3>
+            <p>Last modified on: <span id="last-modified-date"></span></p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+</html>

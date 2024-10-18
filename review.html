@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #4A235A;
+        }
+        p {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank you for your review!</h1>
+    <div id="confirmation"></div>
+    <script>
+        // Helper function to get URL parameters
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search.slice(1);
+            queryString.split('&').forEach(pair => {
+                const [key, value] = pair.split('=');
+                params[decodeURIComponent(key)] = decodeURIComponent(value.replace(/\+/g, ' '));
+            });
+            return params;
+        }
+
+        // Display the review information from the query parameters
+        const queryParams = getQueryParams();
+        const confirmationDiv = document.getElementById('confirmation');
+
+        let reviewHTML = `<p><strong>Product Name:</strong> ${queryParams.productName}</p>`;
+        reviewHTML += `<p><strong>Rating:</strong> ${queryParams.rating} stars</p>`;
+        reviewHTML += `<p><strong>Date of Installation:</strong> ${queryParams.installationDate}</p>`;
+        if (queryParams.features) {
+            const features = Array.isArray(queryParams.features) ? queryParams.features.join(', ') : queryParams.features;
+            reviewHTML += `<p><strong>Features Found Useful:</strong> ${features}</p>`;
+        }
+        if (queryParams.writtenReview) {
+            reviewHTML += `<p><strong>Written Review:</strong> ${queryParams.writtenReview}</p>`;
+        }
+        if (queryParams.userName) {
+            reviewHTML += `<p><strong>Your Name:</strong> ${queryParams.userName}</p>`;
+        }
+
+        confirmationDiv.innerHTML = reviewHTML;
+
+        // Update review count in localStorage
+        let reviewCount = parseInt(localStorage.getItem('reviewCount')) || 0;
+        reviewCount += 1;
+        localStorage.setItem('reviewCount', reviewCount);
+
+        // Display the total number of reviews
+        const reviewCountMessage = document.createElement('p');
+        reviewCountMessage.textContent = `Total reviews you have submitted: ${reviewCount}`;
+        confirmationDiv.appendChild(reviewCountMessage);
+    </script>
+</body>
+</html>
