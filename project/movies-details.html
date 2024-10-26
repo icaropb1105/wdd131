@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Project Movies Review. Page created by Icaro Angelo covering dynamic web design fundamentals, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Icaro Angelo">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="styles/movies-details.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies-details.html">Movies</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="movie-details">
+        <div class="movie-poster">
+            <img src="images/home3.jpg" id="movie-poster" alt="Movie Poster">
+        </div>
+        <div class="movie-info">
+            <h1 id="movie-title">Movie Title</h1>
+            <p><strong>Release Year:</strong> <span id="release-year"></span></p>
+            <p><strong>Cast:</strong> <span id="cast"></span></p>
+            <p><strong>Rating:</strong> <span id="rating"></span></p>
+            <p><strong>Description:</strong> <span id="description"></span></p>
+            <button class="buy-ticket">Buy Ticket</button>
+        </div>
+    </section>
+
+    <section class="user-reviews">
+        <h2>Recent User Reviews</h2>
+        <div class="review">
+            <p><strong>Reviewer 1:</strong> Great movie! A must-watch!</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="review">
+            <p><strong>Reviewer 2:</strong> The story was a bit predictable.</p>
+            <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+        <!-- Adicione mais reviews conforme necessário -->
+    </section>
+
+    <script src="scripts/movies-details.js"></script>
+</body>
+</html>

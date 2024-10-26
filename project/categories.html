@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Project Movies Review. Page created by Icaro Angelo covering dynamic web design fundamentals, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Icaro Angelo">
+    <title>Movie Categories</title>
+    <link rel="stylesheet" href="styles/categories.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies-details.html">Movies</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+        <h1>Movie Categories</h1>
+        <nav>
+            <button onclick="filterMovies('all')">All</button>
+            <button onclick="filterMovies('action')">Action</button>
+            <button onclick="filterMovies('comedy')">Comedy</button>
+            <button onclick="filterMovies('drama')">Drama</button>
+            <button onclick="filterMovies('romance')">Romance</button>
+        </nav>
+    </header>
+
+    <section class="movie-grid">
+        <!-- Action Movies -->
+        <div class="movie-card action">
+            <img src="images/action1.jpg" alt="Action Movie" loading="lazy">
+            <p>★★★☆☆</p>
+        </div>
+        <div class="movie-card action">
+            <img src="images/action2.jpg" alt="Action Movie" loading="lazy">
+            <p>★★★★☆</p>
+        </div>
+        <div class="movie-card action">
+            <img src="images/action3.jpg" alt="Action Movie" loading="lazy">
+            <p>★★★★★</p>
+        </div>
+    
+        <!-- Comedy Movies -->
+        <div class="movie-card comedy">
+            <img src="images/comedy1.webp" alt="Comedy Movie" loading="lazy">
+            <p>★★★☆☆</p>
+        </div>
+        <div class="movie-card comedy">
+            <img src="images/comedy2.webp" alt="Comedy Movie" loading="lazy">
+            <p>★★☆☆☆</p>
+        </div>
+        <div class="movie-card comedy">
+            <img src="images/comedy3.webp" alt="Comedy Movie" loading="lazy">
+            <p>★☆☆☆☆</p>
+        </div>
+    
+        <!-- Drama Movies -->
+        <div class="movie-card drama">
+            <img src="images/drama1.webp" alt="Drama Movie" loading="lazy">
+            <p>★★★☆☆</p>
+        </div>
+        <div class="movie-card drama">
+            <img src="images/drama2.webp" alt="Drama Movie" loading="lazy">
+            <p>★★★★★</p>
+        </div>
+        <div class="movie-card drama">
+            <img src="images/drama3.webp" alt="Drama Movie" loading="lazy">
+            <p>★★★★☆</p>
+        </div>
+    
+        <!-- Romance Movies -->
+        <div class="movie-card romance">
+            <img src="images/romance-new.jpg" alt="Romance Movie" loading="lazy">
+            <p>★★★☆☆</p>
+        </div>
+        <div class="movie-card romance">
+            <img src="images/romance-new2.jpg" alt="Romance Movie" loading="lazy">
+            <p>★★★★☆</p>
+        </div>
+        <div class="movie-card romance">
+            <img src="images/romance-new3.jpg" alt="Romance Movie" loading="lazy">
+            <p>★★★★★</p>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="social-media">
+                <h3>Follow Us on Social</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="Twitter" width="30">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg" alt="TikTok" width="30">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-middle">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Conditions of Use</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Simple Movies. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="scripts/categories.js"></script>
+</body>
+</html>

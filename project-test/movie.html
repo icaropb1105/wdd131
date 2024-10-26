@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" href="styles/movie.css">
+</head>
+<body>
+    <!-- Header with Search Bar -->
+    <header>
+        <div class="container">
+            <h1>Movie Reviews</h1>
+            <input type="text" id="search-input" placeholder="Search for a movie..." class="search-bar">
+            <button id="search-btn">Search</button>
+            <p id="error-message" style="color: red; display: none;">Please enter a movie title to search.</p>
+        </div>
+    </header>
+
+    <!-- Carousel of Popular Movies -->
+    <section class="carousel">
+        <h2>Popular Movies</h2>
+        <div class="movie-carousel" id="movie-carousel">
+            <div class="movie">
+                <img src="https://picsum.photos/200" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <p>★★★★☆</p>
+                <button>Read Review</button>
+            </div>
+            <div class="movie">
+                <img src="https://picsum.photos/200" alt="Movie 2">
+                <h3>Movie Title 2</h3>
+                <p>★★★☆☆</p>
+                <button>Read Review</button>
+            </div>
+            <div class="movie">
+                <img src="https://picsum.photos/200" alt="Movie 3">
+                <h3>Movie Title 3</h3>
+                <p>★★★★★</p>
+                <button>Read Review</button>
+            </div>
+            <!-- Add more movie items here -->
+        </div>
+        <button id="prev-btn">Prev</button>
+        <button id="next-btn">Next</button>
+    </section>
+
+    <!-- Movie Categories -->
+    <section class="categories">
+        <h2>Browse by Category</h2>
+        <div class="category-list">
+            <button>Action</button>
+            <button>Drama</button>
+            <button>Comedy</button>
+            <!-- Add more categories as needed -->
+        </div>
+    </section>
+    <script src="script/movie.js"></script>
+</body>
+</html>

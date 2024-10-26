@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Project Movies Review. Page created by Icaro Angelo covering dynamic web design fundamentals, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Icaro Angelo">
+    <title>Simple Movies</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.details.html">Movies</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>SIMPLE MOVIES</h1>
+            <p>Popular or recently added movies</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies...">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Carousel Section -->
+    <section class="carousel">
+        <h2>Highlights</h2>
+        <div class="carousel-container">
+            <img class="movie-link" src="images/action3.jpg" alt="Movie 1" data-id="a3" loading="lazy">
+            <img class="movie-link" src="images/romance-new3.jpg" alt="Movie 2" data-id="r3" loading="lazy">
+            <img class="movie-link" src="images/action2.jpg" alt="Movie 3" data-id="a2" loading="lazy">
+            <img class="movie-link" src="images/drama3.webp" alt="Movie 4" data-id="d3" loading="lazy">
+            <img class="movie-link" src="images/drama2.webp" alt="Movie 5" data-id="d2" loading="lazy">
+            <img class="movie-link" src="images/romance-new2.jpg" alt="Movie 6" data-id="r2" loading="lazy">
+            <img class="movie-link" src="images/action1.jpg" alt="Movie 7" data-id="a1" loading="lazy">
+            <img class="movie-link" src="images/comedy1.webp" alt="Movie 8" data-id="c1" loading="lazy">
+            <img class="movie-link" src="images/drama1.webp" alt="Movie 9" data-id="d1" loading="lazy">
+            <img class="movie-link" src="images/comedy3.webp" alt="Movie 10" data-id="c3" loading="lazy">
+        </div>
+        <div class="carousel-buttons">
+            <button id="prevBtn">◀</button>
+            <button id="nextBtn">▶</button>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="social-media">
+                <h3>Follow Us on Social</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="Twitter" width="30">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg" alt="TikTok" width="30">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-middle">
+            <ul class="footer-links">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Conditions of Use</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Simple Movies. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
